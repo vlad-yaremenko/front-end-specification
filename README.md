@@ -30,7 +30,7 @@
 
 При разработки архитектуры нужно:
 
- - [Выбрать подход к разработке](#development-practices)
+ - [Выбрать методологию разработки](#software-development-methodologies)
  - Выбрать стек технологий
  - Разбить проект на отдельные модули
  - Описать работу сервисов
@@ -46,17 +46,17 @@
 
 Get методы и функции должны **возвращать значение**.
 
-##  Development practices
+## Software development methodologies
 
--   [ATDD](https://en.wikipedia.org/wiki/Acceptance_test%E2%80%93driven_development "Acceptance test–driven development")
--   [BDD](https://en.wikipedia.org/wiki/Behavior-driven_development "Behavior-driven development")
--   [CCO](https://en.wikipedia.org/wiki/Extreme_programming_practices#Collective_code_ownership "Extreme programming practices")
--   [CI](https://en.wikipedia.org/wiki/Continuous_Integration "Continuous Integration")
--   [CD](https://en.wikipedia.org/wiki/Continuous_Delivery "Continuous Delivery")
--   [DDD](https://en.wikipedia.org/wiki/Domain-driven_design "Domain-driven design")
--   [PP](https://en.wikipedia.org/wiki/Pair_Programming "Pair Programming")
--   [Stand-up](https://en.wikipedia.org/wiki/Stand-up_meeting "Stand-up meeting")
--   [TDD](https://en.wikipedia.org/wiki/Test-driven_development "Test-driven development")
+- [ATDD](https://en.wikipedia.org/wiki/Acceptance_test%E2%80%93driven_development "Acceptance test–driven development")
+- [BDD](https://en.wikipedia.org/wiki/Behavior-driven_development "Behavior-driven development")
+- [CCO](https://en.wikipedia.org/wiki/Extreme_programming_practices#Collective_code_ownership "Extreme programming practices")
+- [CI](https://en.wikipedia.org/wiki/Continuous_Integration "Continuous Integration")
+- [CD](https://en.wikipedia.org/wiki/Continuous_Delivery "Continuous Delivery")
+- [DDD](https://en.wikipedia.org/wiki/Domain-driven_design "Domain-driven design")
+- [PP](https://en.wikipedia.org/wiki/Pair_Programming "Pair Programming")
+- [Stand-up](https://en.wikipedia.org/wiki/Stand-up_meeting "Stand-up meeting")
+- [TDD](https://en.wikipedia.org/wiki/Test-driven_development "Test-driven development")
 
 ## README
 
@@ -82,15 +82,11 @@ Latest ✔ | Latest ✔ | 10+ ✔ | Latest ✔ | Latest ✔ | Latest ✔ |
 
 ## Base setup
 
-TODO: Coming soon
-
 ### .files
 
 - [.gitignore](dotfiles/.gitignore)
 - [.*lint](#code-linting)
-- .env
-
-TODO: Describe all dotfiles
+- .env - Описывает переменные окружения для node.js проектов
 
 ### Package.json
 
@@ -131,23 +127,19 @@ package.json находится в корневой директории и со
 
 TODO: Coming soon
 
-TODO: Add linting and validator
-
 Для разметки страницы ислользуется HTML5.
 
 ## Styles
 
 TODO: Coming soon
-TODO: Add linting and validator StyleLint, CSSLint, SASSLint
-TODO: Look on post-css
-TODO: Autoprefixer settings
 
 Для написания стилей используется [шаблонизатор SCSS](https://sass-lang.com/)
+
+В проект с использованием SCSS подключается [файл](/dotfiles/.stylelintrc) конфигараций [StyleLint](https://stylelint.io/)
 
 ### Methodologies
 
 TODO: Coming soon
-TODO: Пример кода с использованием BEM
 
 При разработке стилей используется [BEM](http://getbem.com/) методология.
 
@@ -155,19 +147,19 @@ TODO: Пример кода с использованием BEM
 
 ### ES6+
 
-Компиляция с помощью Babel
-
 Код должен соответствовать требованием [Airbnb](https://github.com/airbnb/javascript).
 
-В каждый проект подключается ESLint (Приложить ссылку на файл конфигураций).
+В каждый проект, для избежания елементарных ошибок, подключается [конфигурационный](/dotfiles/.eslintrc) файл [ESLint](https://eslint.org/).
 
 ## Development process
 
 ### Code linting
 
-TODO: Coming soon
+#### *Lint files list
+ - [ESLint](/dotfiles/.eslintrc)
+ - [StyleLint](/dotfiles/.stylelintrc)
 
-Подключенные *Lint файлы должны блокировать билд проекта при наличии ошибок и делают невозможным коммит.
+Подключенные *Lint файлы будут делать невозможным билд/коммит проекта без соблюдения их правил.
 
 ### TODO
 
@@ -217,12 +209,7 @@ TDD, E2E testing, Integration testing, Functional testing, UI testing, Acceptanc
 
 Для тестирования кроссбраузерности используется BrowserStack.
 
-Для работы с ним нужно установить [chrome extension](https://chrome.google.com/webstore/detail/browserstack-automatizati/lnbbklihpjghcboodnmcehadmhhphdea) и зайти в [BrowserStack](https://www.browserstack.com/) с кредами:
-
-```
-Username: dmitry.butyrin@requestum.com
-Password: 123456
-```
+Для работы с ним нужно установить [chrome extension](https://chrome.google.com/webstore/detail/browserstack-automatizati/lnbbklihpjghcboodnmcehadmhhphdea) и зайти в общий [BrowserStack](https://www.browserstack.com/).
 
 В случае, если BrowserStack занят другим разработчиком или тестировщиком, страница будет заблокирована, пока BrowserStack не освободится.
 
@@ -263,6 +250,8 @@ TODO: Coming soon
 - Описать принципы составления архитектуры проекта
 - Describe development practices
 - Describe package.json settings for npm modules
+- Autoprefixer settings
+- Describe required devDependencies
 
 ## Author
 
