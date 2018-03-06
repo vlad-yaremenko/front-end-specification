@@ -1,0 +1,25 @@
+# compiled output
+/dist
+/tmp
+*.map
+
+# dependencies
+/node_modules
+/bower_components
+
+# IDEs and editors
+/.idea
+*.swp
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+
+#System Files
+.DS_Store
+
