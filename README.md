@@ -1,4 +1,4 @@
-# Front-end development specification
+# Frone-end development specification
 
 > Feel free to create pull requests to add content. Open issues to discuss ideas, or get clarification.
 
@@ -22,6 +22,10 @@
 
 Он знает все героические [принципы](https://www.artima.com/weblogs/viewpost.jsp?thread=331531).
 
+### Front-endman required knowledge
+
+Here will be a required knowledge for front-endman
+
 ## Architecture
 
 Создание архитектуры ведётся в [draw.io](https://www.draw.io/)
@@ -32,11 +36,11 @@
 
 При разработки архитектуры нужно:
 
- - [Выбрать методологию разработки](#software-development-methodologies)
- - Выбрать стек технологий
- - Разбить проект на отдельные модули
- - Описать работу сервисов
- - Продумать взаимодействие между сервисами и модулями
+- [Выбрать методологию разработки](#software-development-methodologies)
+- Выбрать стек технологий
+- Разбить проект на отдельные модули
+- Описать работу сервисов
+- Продумать взаимодействие между сервисами и модулями
 
 ### Rules
 
@@ -66,15 +70,18 @@
 
 Все проекты сопровождаются [README.md](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) файлом в котором описаны:
 
- - Название проекта
- - Короткое описание
- - Инструкция по установке зависимостей и настройке окружения
- - Команды для:
-   - Старта разработки. Запуск watch - еров
-   - Сборки
-   - Запуска тестов
- - Указаны основные технологии
- - Указаны поддержка браузеров
+- Название проекта
+- Короткое описание
+- Homepage
+- Ссылку на систему баг трекинга
+- Сыылку на репозиторий
+- Инструкция по установке зависимостей и настройке окружения
+- Команды для:
+  - Старта разработки. Запуск watch - еров
+  - Сборки
+  - Запуска тестов
+- Указаны основные технологии
+- Указаны поддержка браузеров
 
 ## Browsers support
 
@@ -96,10 +103,7 @@ Latest ✔ | Latest ✔ | 10+ ✔ | Latest ✔ | Latest ✔ | Latest ✔ |
 
 ### Package.json
 
-package.json находится в корневой директории и содержит базовую информацию о проекте:
- - Homepage
- - Ссылку на систему баг трекинга
- - Сыылку на репозиторий
+package.json находится в корневой директории и является стартовой точкой проекта.
 
 #### Project
 
@@ -107,16 +111,10 @@ package.json находится в корневой директории и со
 {
   "name": "project-name",
   "version": "0.0.1",
-  "homepage": "projecthome.com",
   "scripts": {
     "start": "Start development process",
     "publish": "Create build for production",
     "test": "Run tests (unit, lint, ...)"
-  },
-  "bugs": "https://github.com/owner/project/issues",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/owner/project"
   },
   "dependencies": {
     "name": "version"
@@ -131,21 +129,15 @@ package.json находится в корневой директории и со
 
 ## Markup
 
-TODO: Coming soon
-
 Для разметки страницы ислользуется HTML5.
 
 ## Styles
-
-TODO: Coming soon
 
 Для написания стилей используется [шаблонизатор SCSS](https://sass-lang.com/)
 
 В проект с использованием SCSS подключается [файл](/dotfiles/.stylelintrc) конфигараций [StyleLint](https://stylelint.io/)
 
 ### Methodologies
-
-TODO: Coming soon
 
 При разработке стилей используется [BEM](http://getbem.com/) методология.
 
@@ -162,8 +154,9 @@ TODO: Coming soon
 ### Code linting
 
 #### *Lint files list
- - [ESLint](/dotfiles/.eslintrc)
- - [StyleLint](/dotfiles/.stylelintrc)
+
+- [ESLint](/dotfiles/.eslintrc)
+- [StyleLint](/dotfiles/.stylelintrc)
 
 Подключенные *Lint файлы будут делать невозможным билд/коммит проекта без соблюдения их правил.
 
@@ -224,12 +217,12 @@ TDD, E2E testing, Integration testing, Functional testing, UI testing, Acceptanc
 При разработке UI делается акцент на качество UX.
 Вот некоторые примеры хорошего UX:
 
- - Закрывать попапы по нажатию esc
- - Возможность ходить по всем элементам управления с помощью tab
- - Возможность управления стрелочками в селекте
- - Реакция на focus
- - Активная ссылка не должна нажиматься дважды
- - Вывод сообщений об ошибке
+- Закрывать попапы по нажатию esc
+- Возможность ходить по всем элементам управления с помощью tab
+- Возможность управления стрелочками в селекте
+- Реакция на focus
+- Активная ссылка не должна нажиматься дважды
+- Вывод сообщений об ошибке
 
 У нас [тут больше](http://bfy.tw/Gt9G)
 
@@ -258,6 +251,10 @@ TODO: Coming soon
 - Describe package.json settings for npm modules
 - Autoprefixer settings
 - Describe required devDependencies
+- Добавить пример README.md файла
+- Describe HTML
+- Describe BEM
+- Describe SCSS
 
 ## Author
 
