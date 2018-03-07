@@ -17,6 +17,8 @@
 Он следует лучшим стандартам и использует лучшие практики.
 
 Он может работает с любыми технологиями.
+В то же время он не распыляется благодаря тому, что он состоит из множества частей
+и каждая его часть знает свою технологию на столько хорошо, что может написать книгу.
 
 Он [SuperDRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). Все, что он сделал один раз в седующий он сделает в три раза быстрее.
 
@@ -24,7 +26,36 @@
 
 ### Front-endman required knowledge
 
-Here will be a required knowledge for front-endman
+- HTML/CSS/JavaScript
+- Responsive Web
+- SCSS
+- BEM
+- SVG
+- Git - Version control
+- HTTP(S)
+- RESTful APIs
+- SSH
+- Basic terminal usage
+- Personal text editor
+- Testing
+- Data structures & Algorithms
+- GOF Design patterns
+- Architectural patterns
+- SOLID, YAGNI, KISS etc
+- Regular Expressions
+- ES6
+- TypeScript
+- NPM
+- Gulp
+- Webpack
+
+Тут [больше](https://codeburst.io/the-2018-web-developer-roadmap-826b1b806e8://codeburst.io/the-2018-web-developer-roadmap-826b1b806e8d)
+
+### Personal qualities
+
+- Концентрация. Он изучает выбранную тему до конца. Он не умеет все и сразу.
+- Для фиксации прогресса он пишет статью на изученную тему и делится ей с обществом.
+- Он может признать свои проблемы. У него есть список проблем и он стремительно идёт к их устранению.
 
 ## Architecture
 
