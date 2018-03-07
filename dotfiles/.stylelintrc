@@ -1,7 +1,8 @@
 {
-  "extends": "stylelint-config-sass-guidelines",
+  "extends": "stylelint-config-recommended-scss",
   "plugins": [
     "stylelint-scss",
-    "stylelint-selector-bem-pattern"
+    "stylelint-selector-bem-pattern",
+    "stylelint-no-unsupported-browser-features"
   ]
 }
