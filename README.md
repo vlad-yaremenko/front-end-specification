@@ -1,4 +1,4 @@
-# Frone-end development specification
+# Front-end development specification
 
 > Feel free to create pull requests to add content. Open issues to discuss ideas, or get clarification.
 
@@ -6,7 +6,7 @@
 
 > We should be on the same page
 
-Чтобы front-end отдел превратился во front-endman - а.
+Чтобы front-end отдел превратился во front-endman-а.
 
 ### Кто такой front-endman?
 
@@ -61,7 +61,7 @@
 
 Создание архитектуры ведётся в [draw.io](https://www.draw.io/)
 
-На планирование архитектуры в обязательном порядке выделяется **от 8 - ми часов**.
+На планирование архитектуры в обязательном порядке выделяется **от 8-ми часов**.
 
 ### Stages
 
@@ -136,6 +136,8 @@ Latest ✔ | Latest ✔ | 10+ ✔ | Latest ✔ | Latest ✔ | Latest ✔ |
 
 package.json находится в корневой директории и является стартовой точкой проекта.
 
+Для линтинга кода package.json имеет несколько обязательных dev-зависимостей.
+
 #### Project
 
 ```json
@@ -145,13 +147,17 @@ package.json находится в корневой директории и яв
   "scripts": {
     "start": "Start development process",
     "publish": "Create build for production",
-    "test": "Run tests (unit, lint, ...)"
+    "test": "Run tests (unit, lint, ...)",
+    "stylelint": "./node_modules/.bin/stylelint \"**/*.scss\" --syntax scss"
   },
   "dependencies": {
     "name": "version"
   },
   "devDependencies": {
-    "name": "version"
+    "stylelint": "latest",
+    "stylelint-config-sass-guidelines": "latest",
+    "stylelint-config-standard": "latest",
+    "stylelint-no-unsupported-browser-features": "latest"
   }
 }
 ```
@@ -166,7 +172,7 @@ package.json находится в корневой директории и яв
 
 Для написания стилей используется [шаблонизатор SCSS](https://sass-lang.com/)
 
-В проект с использованием SCSS подключается [файл](/dotfiles/.stylelintrc) конфигараций [StyleLint](https://stylelint.io/)
+Для поддержания code style подключается [файл](/dotfiles/.stylelintrc) конфигараций [StyleLint](https://stylelint.io/)
 
 ### Methodologies
 
@@ -286,6 +292,9 @@ TODO: Coming soon
 - Describe HTML
 - Describe BEM
 - Describe SCSS
+- Look on [htmlcs](https://github.com/ecomfe/htmlcs) or [htmllint](https://github.com/htmllint/htmllint)
+- Look on [doiuse](https://github.com/anandthakker/doiuse)
+- Look on [caniuse-api](https://www.npmjs.com/package/caniuse-api)
 
 ## Author
 

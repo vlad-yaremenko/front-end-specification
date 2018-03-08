@@ -1,8 +1,13 @@
 {
-  "extends": "stylelint-config-recommended-scss",
+  "extends": ["stylelint-config-standard", "stylelint-config-sass-guidelines"],
   "plugins": [
-    "stylelint-scss",
-    "stylelint-selector-bem-pattern",
     "stylelint-no-unsupported-browser-features"
-  ]
+  ],
+  "rules": {
+    "plugin/no-unsupported-browser-features": [true, {
+      "browsers": ["> 2%", "Last 2 versions", "ie >= 10", "not ie_mob < 11", "not op_mini all"],
+      "severity": "warning"
+    }],
+    "selector-class-pattern": "^(?:[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+))*(?:__[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*)?(?:_[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*)?(?:\\[.+\\])?$"
+  }
 }
