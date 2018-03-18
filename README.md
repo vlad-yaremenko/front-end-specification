@@ -149,13 +149,13 @@ package.json находится в корневой директории и яв
     "publish": "Create build for production",
     "test": "Run tests (unit, lint, ...)",
     "stylelint": "stylelint \"**/*.scss\" --syntax scss"
-	},
-	"dependencies": {
+  },
+  "dependencies": {
     "name": "version"
-	},
-	"devDependencies": {
+  },
+  "devDependencies": {
     "name": "version"
-	}
+  }
 }
 ```
 
@@ -176,6 +176,16 @@ package.json находится в корневой директории и яв
 
  - [stylelint-scss](https://github.com/kristerkari/stylelint-scss#list-of-rules)
  - [stylelint-no-unsupported-browser-features](https://www.npmjs.com/package/stylelint-no-unsupported-browser-features) - проверяет поддержку браузером написаных правил
+ 
+Для запуска StyleLint необходимо установить зависимости
+
+```bash
+# Install dependencies
+npm i -D stylelint stylelint-config-standard stylelint-no-unsupported-browser-features
+
+# Run linting
+stylelint ./path/to/styles/*.css
+```
 
 ### Methodologies
 
