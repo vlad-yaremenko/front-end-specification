@@ -148,16 +148,13 @@ package.json находится в корневой директории и яв
     "start": "Start development process",
     "publish": "Create build for production",
     "test": "Run tests (unit, lint, ...)",
-    "stylelint": "./node_modules/.bin/stylelint \"**/*.scss\" --syntax scss"
+    "stylelint": "stylelint \"**/*.scss\" --syntax scss"
   },
   "dependencies": {
     "name": "version"
   },
   "devDependencies": {
-    "stylelint": "latest",
-    "stylelint-config-sass-guidelines": "latest",
-    "stylelint-config-standard": "latest",
-    "stylelint-no-unsupported-browser-features": "latest"
+    "name": "version"
   }
 }
 ```
@@ -173,6 +170,22 @@ package.json находится в корневой директории и яв
 Для написания стилей используется [шаблонизатор SCSS](https://sass-lang.com/)
 
 Для поддержания code style подключается [файл](/dotfiles/.stylelintrc) конфигараций [StyleLint](https://stylelint.io/)
+
+Настройки StyleLint формируются из [правил StyleLint](https://stylelint.io/user-guide/rules/)
+и дополнительных плагинов:
+
+ - [stylelint-scss](https://github.com/kristerkari/stylelint-scss#list-of-rules)
+ - [stylelint-no-unsupported-browser-features](https://www.npmjs.com/package/stylelint-no-unsupported-browser-features) - проверяет поддержку браузером написаных правил
+ 
+Для запуска StyleLint необходимо установить зависимости
+
+```bash
+# Install dependencies
+npm i -D stylelint stylelint-config-standard stylelint-no-unsupported-browser-features
+
+# Run linting
+stylelint ./path/to/styles/*.css
+```
 
 ### Methodologies
 
