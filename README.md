@@ -181,10 +181,10 @@ package.json находится в корневой директории и яв
 
 ```bash
 # Install dependencies
-npm i -D stylelint stylelint-config-standard stylelint-no-unsupported-browser-features
+npm i -D stylelint stylelint-config-standard stylelint-no-unsupported-browser-features stylelint-scss
 
 # Run linting
-stylelint ./path/to/styles/*.css
+stylelint ./path/to/styles/*.scss --syntax scss
 ```
 
 ### Methodologies
