@@ -1,7 +1,8 @@
 {
   "extends": ["stylelint-config-standard"],
   "plugins": [
-    "stylelint-no-unsupported-browser-features"
+    "stylelint-no-unsupported-browser-features",
+		"stylelint-scss"
   ],
   "rules": {
     "plugin/no-unsupported-browser-features": [
@@ -178,6 +179,25 @@
     "comment-whitespace-inside": "always",
     "indentation": 2,
     "max-empty-lines": 1,
-    "no-eol-whitespace": true
+    "no-eol-whitespace": true,
+
+		"scss/at-else-closing-brace-newline-after": "always-last-in-chain",
+		"scss/at-else-closing-brace-space-after": "always-intermediate",
+		"scss/at-else-empty-line-before": "never",
+		"scss/at-else-if-parentheses-space-before": "always",
+		"scss/at-extend-no-missing-placeholder": true,
+		"scss/at-function-named-arguments": "always",
+		"scss/at-function-parentheses-space-before": "never",
+		"scss/at-if-closing-brace-newline-after": "always-last-in-chain",
+		"scss/at-mixin-argumentless-call-parentheses": "always",
+		"scss/at-mixin-named-arguments": "always",
+		"scss/at-mixin-parentheses-space-before": "always",
+		"scss/at-rule-no-unknown": true,
+		"scss/dollar-variable-colon-newline-after": "always-multi-line",
+		"scss/dollar-variable-colon-space-after": "always-single-line",
+		"scss/dollar-variable-colon-space-before": "never",
+		"scss/double-slash-comment-whitespace-inside": "always",
+		"scss/declaration-nested-properties": "never",
+		"scss/selector-no-redundant-nesting-selector": true
   }
 }
