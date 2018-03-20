@@ -258,9 +258,11 @@ TDD, E2E testing, Integration testing, Functional testing, UI testing, Acceptanc
 
 Для тестирования кроссбраузерности используется BrowserStack.
 
-Для работы с ним нужно установить [chrome extension](https://chrome.google.com/webstore/detail/browserstack-automatizati/lnbbklihpjghcboodnmcehadmhhphdea) и зайти в общий [BrowserStack](https://www.browserstack.com/).
+Для работы с ним нужно установить [chrome extension](https://chrome.google.com/webstore/detail/browsersync/odccdjehkinjebnjnkpbjeplabccchfe), прописать в настройках расширения https://www.browserstack.com/ и зайти в общий [BrowserStack](https://www.browserstack.com/).
 
-В случае, если BrowserStack занят другим разработчиком или тестировщиком, страница будет заблокирована, пока BrowserStack не освободится.
+В случае, если BrowserStack занят, страница будет заблокирована, пока BrowserStack не освободится.
+
+Все пожелания по расширению оставляем [тут](https://github.com/vlad-yaremenko/browsersync-extension/issues)
 
 ### Good breeding
 
