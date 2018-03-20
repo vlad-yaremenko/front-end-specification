@@ -176,7 +176,7 @@ package.json находится в корневой директории и яв
 
  - [stylelint-scss](https://github.com/kristerkari/stylelint-scss#list-of-rules)
  - [stylelint-no-unsupported-browser-features](https://www.npmjs.com/package/stylelint-no-unsupported-browser-features) - проверяет поддержку браузером написаных правил
- 
+
 Для запуска StyleLint необходимо установить зависимости
 
 ```bash
@@ -258,7 +258,12 @@ TDD, E2E testing, Integration testing, Functional testing, UI testing, Acceptanc
 
 Для тестирования кроссбраузерности используется BrowserStack.
 
-Для работы с ним нужно установить [chrome extension](https://chrome.google.com/webstore/detail/browsersync/odccdjehkinjebnjnkpbjeplabccchfe), прописать в настройках расширения https://www.browserstack.com/ и зайти в общий [BrowserStack](https://www.browserstack.com/).
+Для работы с ним нужно установить [chrome extension](https://chrome.google.com/webstore/detail/browsersync/odccdjehkinjebnjnkpbjeplabccchfe),
+прописать в настройках расширения `https://www.browserstack.com/`
+
+![Browsersync options](https://i.imgur.com/RCZzT84.png)
+
+и зайти в общий [BrowserStack](https://www.browserstack.com/).
 
 В случае, если BrowserStack занят, страница будет заблокирована, пока BrowserStack не освободится.
 
@@ -285,31 +290,6 @@ TODO: Coming soon codecov, travis, jenkins, circle.
 ## Post-deployment maintenance
 
 TODO: Coming soon
-
-## TODO
-
-- Опмсать использование модулей
-- TypeScript
-- Project generator
-- Branch flow strategy
-- UML
-- Continius integration
-- Post-deployment maintenance
-- Browsers support
-- Code review
-- Provide сode examples for architecture
-- Описать принципы составления архитектуры проекта
-- Describe development practices
-- Describe package.json settings for npm modules
-- Autoprefixer settings
-- Describe required devDependencies
-- Добавить пример README.md файла
-- Describe HTML
-- Describe BEM
-- Describe SCSS
-- Look on [htmlcs](https://github.com/ecomfe/htmlcs) or [htmllint](https://github.com/htmllint/htmllint)
-- Look on [doiuse](https://github.com/anandthakker/doiuse)
-- Look on [caniuse-api](https://www.npmjs.com/package/caniuse-api)
 
 ## Author
 
