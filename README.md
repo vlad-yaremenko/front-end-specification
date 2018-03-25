@@ -50,7 +50,7 @@
 - Gulp
 - Webpack
 
-Тут [больше](https://codeburst.io/the-2018-web-developer-roadmap-826b1b806e8://codeburst.io/the-2018-web-developer-roadmap-826b1b806e8d)
+Тут [больше](https://codeburst.io/the-2018-web-developer-roadmap-826b1b806e8d)
 
 ### Personal qualities
 
@@ -109,7 +109,7 @@
 - Ссылку на репозиторий
 - Инструкция по установке зависимостей и настройке окружения
 - Команды для:
-  - Старта разработки. Запуск watch - еров
+  - Старта разработки. Запуск watch-еров
   - Сборки
   - Запуска тестов
 - Указаны основные технологии
