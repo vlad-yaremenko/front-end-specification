@@ -20,7 +20,8 @@
 В то же время он не распыляется благодаря тому, что он состоит из множества частей
 и каждая его часть знает свою технологию на столько хорошо, что может написать книгу.
 
-Он [SuperDRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). Все, что он сделал один раз в седующий он сделает в три раза быстрее.
+Он [SuperDRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). Все, что он сделал один раз
+в следующий сделает в три раза быстрее.
 
 Он знает все героические [принципы](https://www.artima.com/weblogs/viewpost.jsp?thread=331531).
 
@@ -31,7 +32,7 @@
 - SCSS
 - BEM
 - SVG
-- Git - Version control
+- Git & GitLab
 - HTTP(S)
 - RESTful APIs
 - SSH
@@ -65,7 +66,7 @@
 
 ### Stages
 
-При разработки архитектуры нужно:
+При разработке архитектуры нужно:
 
 - [Выбрать методологию разработки](#software-development-methodologies)
 - Выбрать стек технологий
@@ -105,7 +106,7 @@
 - Короткое описание
 - Homepage
 - Ссылку на систему баг трекинга
-- Сыылку на репозиторий
+- Ссылку на репозиторий
 - Инструкция по установке зависимостей и настройке окружения
 - Команды для:
   - Старта разработки. Запуск watch - еров
@@ -116,7 +117,7 @@
 
 ## Browsers support
 
-Если заказчик не определил браузерную поддержку, то по умолчанию мы поддерживаем:
+Если заказчик не определил поддержку браузеров, то по умолчанию мы поддерживаем:
 
 ![Chrome](https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome\_48x48.png) | ![Firefox](https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox\_48x48.png) | ![IE](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge\_48x48.png) |![Edge](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge\_48x48.png) | ![Opera](https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera\_48x48.png) | ![Safari](https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png)
 ---      | ---      | ---   | ---      | ---      | ---      |
@@ -163,19 +164,20 @@ package.json находится в корневой директории и яв
 
 ## Markup
 
-Для разметки страницы ислользуется HTML5.
+Для разметки страницы используется HTML5.
 
 ## Styles
 
 Для написания стилей используется [шаблонизатор SCSS](https://sass-lang.com/)
 
-Для поддержания code style подключается [файл](/dotfiles/.stylelintrc) конфигараций [StyleLint](https://stylelint.io/)
+Для поддержания code style подключается [файл](/dotfiles/.stylelintrc) конфигураций [StyleLint](https://stylelint.io/)
 
 Настройки StyleLint формируются из [правил StyleLint](https://stylelint.io/user-guide/rules/)
 и дополнительных плагинов:
 
- - [stylelint-scss](https://github.com/kristerkari/stylelint-scss#list-of-rules)
- - [stylelint-no-unsupported-browser-features](https://www.npmjs.com/package/stylelint-no-unsupported-browser-features) - проверяет поддержку браузером написаных правил
+- [stylelint config standard](https://github.com/stylelint/stylelint-config-standard) - основа для правил StyleLint
+- [stylelint-scss](https://github.com/kristerkari/stylelint-scss#list-of-rules)
+- [stylelint-no-unsupported-browser-features](https://www.npmjs.com/package/stylelint-no-unsupported-browser-features) - проверяет поддержку браузером написанных правил
 
 Для запуска StyleLint необходимо установить зависимости
 
@@ -197,7 +199,7 @@ stylelint ./path/to/styles/*.scss --syntax scss
 
 Код должен соответствовать требованием [Airbnb](https://github.com/airbnb/javascript).
 
-В каждый проект, для избежания елементарных ошибок, подключается [конфигурационный](/dotfiles/.eslintrc) файл [ESLint](https://eslint.org/).
+В каждый проект, для избежания элементарных ошибок, подключается [конфигурационный](/dotfiles/.eslintrc) файл [ESLint](https://eslint.org/).
 
 ## Development process
 
@@ -212,17 +214,21 @@ stylelint ./path/to/styles/*.scss --syntax scss
 
 ### TODO
 
-Все изменения, которые нужно внести в код или реализовать, должны быть описаны в TODO коментариях, в тех местах, где нужно реализовать функционал или внести изменения.
+Все изменения, которые нужно внести в код или реализовать, должны быть описаны в TODO комментариях, в тех местах, где нужно реализовать функционал или внести изменения.
 
 Это делается для того, чтобы не держать в голове все изменения и дать другим разработчикам понимание того, что нужно изменить или не трогать.
 
-При продакшн сборке все TODO коментарии удаляются.
+При продакшн сборке все TODO комментарии удаляются.
 
 ### Comments
 
-Избегайте бессмысленного коментирования кода, имена переменных и функций должны говорить сами за себя.
+Избегайте бессмысленного комментирования кода, имена переменных и функций должны говорить сами за себя.
 
-При продакшн сборке все коментарии удаляются.
+Comments – Do not write comments for what you are doing, instead write comments on why you are doing.
+Specify about any hacks, workaround and temporary fixes. Additionally, mention pending tasks
+in your to-do comments, which can be tracked easily.
+
+При продакшн сборке все комментарии удаляются.
 
 ### Branch flow
 
@@ -232,13 +238,94 @@ TODO: Use git hooks for automatization https://developer.ibm.com/node/2017/08/31
 
 ### Code review
 
-TODO: Coming soon. Describe code review process
+Первое, что должен проверить ревьювер - работает ли функционал так, как должен.
+
+#### Основные задачи code review
+
+- Распространить знания по команде
+- Научиться думать, как остальные члены команды
+- Повысить качество и поддерживаемость кода
+
+#### Все, что можно автоматизировать, должно быть автоматизированно
+
+Отлов ошибок нужно предоставить тестам
+
+Следование code style-у должен проверять *lint-ер. Это повысит читаемость кода и упростит его
+поддержку.
+
+#### Ревьювер
+
+> Find problems, Not solutions
+
+Важно искать возможные проблемы в решении, а не стараться максимально оптимизировать код (если
+это не является целью). Если решение уж очень плохое, сообщить автору об этом, понять как он к этому
+пришел и помочь найти другое решение.
+
+**Максимальное** время на ревью **1 час**. Далее код отправляется на доработку или принимается
+
+Не просматривай более 500 строк кода за раз
+
+Если что-то копируется больше 2-х раз, это может быть копипастом
+
+##### Проверь:
+
+- Работает ли функционал так как описано в требованиях
+- Maintainability
+  - Читается ли код как проза
+  - Нарушения семантики - делает ли класс/метод то что написано в его названии
+- Тестируемость
+- Логические ошибки
+- Архитектурные ошибки
+- Возможности для упрощения, использования паттернов.
+- Idiomatic - используются ли все возможности языка, фреймворка
+- Использование плохих практик
+- Team code convention
+- No hard coding, use constants/configuration values
+- Зависимости между классами/компонентами/модулями. Везде ли они нужны?
+- Reliability - отлов исключений
+- Security
+  - Are all data inputs checked (for the correct type, length, format, and range) and encoded?
+  - Where third-party utilities are used, are returning errors being caught?
+  - Are output values checked and encoded?
+  - Are invalid parameter values handled?
+- Performance
+- Usability & User experience
+
+#### Author, please
+
+> Don't meke me think
+
+Одна цель - один коммит
+
+Title - коротко описывает функционал.
+
+Description - описывает что было изменённо, на что нужно обратить внимание. Содержит описание таска.
+
+**Не squash коммиты до окончания ревью**
+
+**Делай code review самостоятельно перед коммитом** (просматривай `git diff`)
+
+Постарайтесь ответить на каждый комментарий
+
+Merge request должен содержать не более 400 строк кода
+
+Удаляйте закомментированный код. Его можно легко восстановить с помощью VCS.
+
+#### Feedback mechanism
+
+Как можно больше общаться вживую.
+
+Для мелких замечаний использовать комментарии в merge request
+
+Instead of explaining the entire solution to developers during the code review process, simply
+share the links of relevant websites or encourage them to research on the
+internet by providing keywords.
 
 ### Testing
 
 TODO: Coming soon
 
-Проект должен включать в себя Unit тесты для избежание повторяющихся ошибок и ускорения процесса разработки.
+Проект должен включать в себя Unit тесты для избежания повторяющихся ошибок и ускорения процесса разработки.
 
 Unit тестами нужно покрывать:
 - Основной функционал
@@ -249,7 +336,7 @@ TODO: Полное покрытие тестами выполняется для
 
 Все тесты запускаются на основе [Karma](https://karma-runner.github.io/2.0/index.html).
 
-Для тестирования извользуется TODO: Выбрать Mocha/Jasmine
+Для тестирования используется TODO: Выбрать Mocha/Jasmine
 
 Jest, Enzyme, Google PageSpeed, GT Metrix, SEO Site Checkup, Pingdom Website Speed Test, YSlow, Webpage Test
 TDD, E2E testing, Integration testing, Functional testing, UI testing, Acceptance tests, Components tests, Service tests, Visual testing.
