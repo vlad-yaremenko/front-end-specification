@@ -27,28 +27,19 @@
 
 ### Front-endman required knowledge
 
-- HTML/CSS/JavaScript
-- Responsive Web
-- SCSS
-- BEM
-- SVG
+- Intermediate english level
+- HTML5, CSS3, JavaScript, SVG
+- Responsive Web, SCSS, BEM
 - Git & GitLab
-- HTTP(S)
-- RESTful APIs
-- SSH
-- Basic terminal usage
-- Personal text editor
+- HTTP(S), RESTful APIs, SSH
+- NPM, Gulp, Webpack
+- ES6, TypeScript
+- Basic terminal usage, Personal text editor (WebStorm, Vim, Sublime Text, etc.)
 - Testing
 - Data structures & Algorithms
-- GOF Design patterns
-- Architectural patterns
-- SOLID, YAGNI, KISS etc
+- GOF Design patterns, Architectural patterns
 - Regular Expressions
-- ES6
-- TypeScript
-- NPM
-- Gulp
-- Webpack
+- SOLID, YAGNI, KISS etc
 
 Тут [больше](https://codeburst.io/the-2018-web-developer-roadmap-826b1b806e8d)
 
