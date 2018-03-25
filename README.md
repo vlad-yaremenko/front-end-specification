@@ -378,12 +378,6 @@ TODO: Coming soon codecov, travis, jenkins, circle.
 
 TODO: Coming soon
 
-## Author
-
-| [![twitter/_VladYaremenko](https://pbs.twimg.com/profile_images/675676400527933440/1S0w_hoY_200x200.jpg)](https://twitter.com/_VladYaremenko "Follow @_VladYaremenko on Twitter") |
-|---|
-| Vlad Yaremenko <vladyaremenko95.vy@gmail.com> |
-
 ## Issues
 
 Suggestions/improvements [welcome](https://github.com/vlad-yaremenko/front-end-specification/issues)!
