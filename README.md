@@ -25,6 +25,26 @@
 
 Он знает все героические [принципы](https://www.artima.com/weblogs/viewpost.jsp?thread=331531).
 
+### Основные принципы
+
+Основные принципы front-endman-а это:
+
+#### Реюзабельность
+
+Разработка ведется с помощью модулей, которые можно скачать из каталога,
+если в каталоге еще нет нужного вам модуля, то он разрабатывается с расчетом на
+то, чтобы добавить его в каталог для использования в будущем.
+
+#### Автоматизация
+
+> Все, ... автоматизировать, ... автоматизировать.
+
+Тестирование,
+развертывание проекта,
+[настройка ОС](https://github.com/vlad-yaremenko/dotfiles),
+приготовление кофе,
+должно быть максимально быстрым и требовать минимальных телодвижений, и временных затрат.
+
 ### Front-endman required knowledge
 
 - Intermediate english level
@@ -59,7 +79,6 @@
 
 При разработке архитектуры нужно:
 
-- [Выбрать методологию разработки](#software-development-methodologies)
 - Выбрать стек технологий
 - Разбить проект на отдельные модули
 - Описать работу сервисов
@@ -76,18 +95,6 @@
 Любые функции общего назначения (форматирование даты, подготовка данных) **выноситься в helper**.
 
 **Get** методы и функции должны **возвращать значение**.
-
-## Software development methodologies
-
-- [ATDD](https://en.wikipedia.org/wiki/Acceptance_test%E2%80%93driven_development "Acceptance test–driven development")
-- [BDD](https://en.wikipedia.org/wiki/Behavior-driven_development "Behavior-driven development")
-- [CCO](https://en.wikipedia.org/wiki/Extreme_programming_practices#Collective_code_ownership "Extreme programming practices")
-- [CI](https://en.wikipedia.org/wiki/Continuous_Integration "Continuous Integration")
-- [CD](https://en.wikipedia.org/wiki/Continuous_Delivery "Continuous Delivery")
-- [DDD](https://en.wikipedia.org/wiki/Domain-driven_design "Domain-driven design")
-- [PP](https://en.wikipedia.org/wiki/Pair_Programming "Pair Programming")
-- [Stand-up](https://en.wikipedia.org/wiki/Stand-up_meeting "Stand-up meeting")
-- [TDD](https://en.wikipedia.org/wiki/Test-driven_development "Test-driven development")
 
 ## README
 
@@ -252,6 +259,8 @@ TODO: Use git hooks for automatization https://developer.ibm.com/node/2017/08/31
 это не является целью). Если решение уж очень плохое, сообщить автору об этом, понять как он к этому
 пришел и помочь найти другое решение.
 
+Code review - high priority task.
+
 **Максимальное** время на ревью **1 час**. Далее код отправляется на доработку или принимается
 
 Не просматривай более 500 строк кода за раз
@@ -310,6 +319,10 @@ Instead of explaining the entire solution to developers during the code review p
 share the links of relevant websites or encourage them to research on the
 internet by providing keywords.
 
+---
+
+[Read me](https://medium.com/@palantir/code-review-best-practices-19e02780015f)
+
 ### Testing
 
 TODO: Coming soon
@@ -358,14 +371,6 @@ TDD, E2E testing, Integration testing, Functional testing, UI testing, Acceptanc
 - Вывод сообщений об ошибке
 
 У нас [тут больше](http://bfy.tw/Gt9G)
-
-## Continius integration
-
-TODO: Coming soon codecov, travis, jenkins, circle.
-
-## Post-deployment maintenance
-
-TODO: Coming soon
 
 ## Issues
 
