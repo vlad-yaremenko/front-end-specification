@@ -304,9 +304,7 @@ Merge request должен содержать не более 400 строк к�
 
 #### Feedback mechanism
 
-Как можно больше общаться вживую.
-
-Для мелких замечаний использовать комментарии в merge request
+Используйте комментарии в merge request. По окончанию code review сообщите от этому автору в личном сообщении.
 
 Instead of explaining the entire solution to developers during the code review process, simply
 share the links of relevant websites or encourage them to research on the
