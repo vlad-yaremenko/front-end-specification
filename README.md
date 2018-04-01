@@ -230,9 +230,57 @@ in your to-do comments, which can be tracked easily.
 
 ### Branch flow
 
-TODO: Coming soon. Describe branch flow
+> Please make short pull requests. Save your code reviwer
 
-TODO: Use git hooks for automatization https://developer.ibm.com/node/2017/08/31/use-eslint-project/
+#### Main branches
+Во время инициализации проекта создается две основные ветки. С бесконечным жизненным циклом.
+
+- master - содержит версию с текущим релизом
+- develop - содержит версию со следующим релизом. "Nightly builds"
+
+#### Feature branch
+
+Для каждого таска или баг фикса создается **feature** ветка от **develop** ветки.
+
+```
+$ git checkout -b myfeature develop
+```
+
+**Feature** ветка должна сливаться с **develop** веткой
+
+Ветку можно назвать любым именем, кроме master, develop, release-*, hotfix-*
+
+#### Production release
+
+Когда настает время продакшн релиза нужно решить, какой функционал войдет в релиз и что нужно подправить перед релизом. Для этого создается **release** ветка от **develop** ветки.
+
+```
+$ git checkout -b release-1.2 develop
+```
+
+**Release** ветка должна быть слита с **master** и **develop** ветками.
+
+При слиянии **release** ветки в **master** создается **tag** с номером версии.
+
+Конвенция именования ветки для релиза `release-[version number]`
+
+#### Hotfix
+
+Ветка **hotfix** создается при необходимости быстро поправить что-то в продакшене.
+
+**Hotfix** создается от **master** с указанием версии сборки.
+
+```
+$ git checkout -b hotfix-1.2.1 master
+```
+
+**Hotfix** ветка должна быть слита с **master** и **develop** ветками.
+
+При слиянии **hotfix** ветки в **master** создается **tag** с номером версии сборки.
+
+Конвенция именования ветки `hotfix-n.n.[build version number]`
+
+[Read me](http://nvie.com/posts/a-successful-git-branching-model)
 
 ### Code review
 
@@ -318,8 +366,6 @@ Merge request должен содержать не более 400 строк к�
 Instead of explaining the entire solution to developers during the code review process, simply
 share the links of relevant websites or encourage them to research on the
 internet by providing keywords.
-
----
 
 [Read me](https://medium.com/@palantir/code-review-best-practices-19e02780015f)
 
