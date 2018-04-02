@@ -202,12 +202,13 @@ stylelint ./path/to/styles/*.scss --syntax scss
 
 ### Code linting
 
+Подключенные *Lint файлы будут делать невозможным билд/коммит проекта без соблюдения их правил.
+
 #### *Lint files list
 
 - [ESLint](/dotfiles/.eslintrc)
 - [StyleLint](/dotfiles/.stylelintrc)
-
-Подключенные *Lint файлы будут делать невозможным билд/коммит проекта без соблюдения их правил.
+- TSLint
 
 ### TODO
 
