@@ -29,37 +29,36 @@
 
 Основные принципы front-endman-а это:
 
-#### Реюзабельность
+#### [Reusability](https://en.wikipedia.org/wiki/Reusability)
 
 Разработка ведется с помощью модулей, которые можно скачать из каталога,
 если в каталоге еще нет нужного вам модуля, то он разрабатывается с расчетом на
 то, чтобы добавить его в каталог для использования в будущем.
 
-#### Автоматизация
+Описание модульного принципа смотри [тут](#modules)
+
+#### [Automation](https://en.wikipedia.org/wiki/Automation)
 
 > Все, ... автоматизировать, ... автоматизировать.
 
-Тестирование,
-развертывание проекта,
-[настройка ОС](https://github.com/vlad-yaremenko/dotfiles),
-приготовление кофе,
-должно быть максимально быстрым и требовать минимальных телодвижений, и временных затрат.
+Тестирование, развертывание проекта, [настройка ОС](https://github.com/vlad-yaremenko/dotfiles), приготовление кофе,
+должно быть максимально быстрым и требовать минимальных телодвижений со стороны разработчика.
 
 ### Front-endman required knowledge
 
-- Intermediate english level
-- HTML5, CSS3, JavaScript, SVG
-- Responsive Web, SCSS, BEM
-- Git & GitLab
-- HTTP(S), RESTful APIs, SSH
-- NPM, Gulp, Webpack
-- ES6, TypeScript
-- Basic terminal usage, Personal text editor (WebStorm, Vim, Sublime Text, etc.)
-- Testing
-- Data structures & Algorithms
-- GOF Design patterns, Architectural patterns
-- Regular Expressions
-- SOLID, YAGNI, KISS etc
+- [Intermediate english level](https://tracktest.eu/english-levels-cefr/)
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5), [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG)
+- [Responsive Web](https://developers.google.com/search/mobile-sites/mobile-seo/responsive-design), [SCSS](https://sass-lang.com/), [BEM](https://en.bem.info/methodology/)
+- [Git](https://git-scm.com/) & [GitHub](https://help.github.com/)
+- [HTTP(S)](https://en.wikipedia.org/wiki/HTTPS), [RESTful APIs](https://en.wikipedia.org/wiki/Representational_state_transfer), [SSH](https://www.ssh.com/ssh/)
+- [NPM](https://www.npmjs.com/), [Webpack](https://webpack.js.org/), [Gulp](https://gulpjs.com/)
+- [ES6](https://github.com/lukehoban/es6features), [TypeScript](http://www.typescriptlang.org/)
+- [Basic terminal usage](https://maker.pro/education/basic-linux-commands-for-beginners), Personal text editor (WebStorm, Vim, Sublime Text, etc.)
+- [Test automation](https://en.wikipedia.org/wiki/Test_automation)
+- [Data structures](https://en.wikipedia.org/wiki/Data_structure) & [Algorithms](https://en.wikipedia.org/wiki/Algorithm)
+- [GOF Design patterns](https://en.wikipedia.org/wiki/Design_Patterns), [Architectural patterns](https://web.archive.org/web/20120623081009/http://aahninfotech.com/arct_pattern.html)
+- [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+- [SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)), [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it), [KISS](https://en.wikipedia.org/wiki/KISS_principle) etc
 
 Тут [больше](https://codeburst.io/the-2018-web-developer-roadmap-826b1b806e8d)
 
@@ -417,6 +416,10 @@ TDD, E2E testing, Integration testing, Functional testing, UI testing, Acceptanc
 - Вывод сообщений об ошибке
 
 У нас [тут больше](http://bfy.tw/Gt9G)
+
+### Modules
+
+TODO: Discribe modules principle
 
 ## Issues
 
