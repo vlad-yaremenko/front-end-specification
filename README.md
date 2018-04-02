@@ -344,23 +344,7 @@ internet by providing keywords.
 
 ### Testing
 
-TODO: Coming soon
-
-Проект должен включать в себя Unit тесты для избежания повторяющихся ошибок и ускорения процесса разработки.
-
-Unit тестами нужно покрывать:
-- Основной функционал
-- Часто используемые компоненты
-- Сервисы с бизнес логикой
-
-TODO: Полное покрытие тестами выполняется для компонентов из каталога
-
-Все тесты запускаются на основе [Karma](https://karma-runner.github.io/2.0/index.html).
-
-Для тестирования используется TODO: Выбрать Mocha/Jasmine
-
-Jest, Enzyme, Google PageSpeed, GT Metrix, SEO Site Checkup, Pingdom Website Speed Test, YSlow, Webpage Test
-TDD, E2E testing, Integration testing, Functional testing, UI testing, Acceptance tests, Components tests, Service tests, Visual testing.
+TODO: Describe testing process
 
 #### BrowserStack
 
