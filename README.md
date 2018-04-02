@@ -49,7 +49,7 @@
 - [Intermediate english level](https://tracktest.eu/english-levels-cefr/)
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5), [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG)
 - [Responsive Web](https://developers.google.com/search/mobile-sites/mobile-seo/responsive-design), [SCSS](https://sass-lang.com/), [BEM](https://en.bem.info/methodology/)
-- [Git](https://git-scm.com/) & [GitHub](https://help.github.com/)
+- [Git](https://git-scm.com/)
 - [HTTP(S)](https://en.wikipedia.org/wiki/HTTPS), [RESTful APIs](https://en.wikipedia.org/wiki/Representational_state_transfer), [SSH](https://www.ssh.com/ssh/)
 - [NPM](https://www.npmjs.com/), [Webpack](https://webpack.js.org/), [Gulp](https://gulpjs.com/)
 - [ES6](https://github.com/lukehoban/es6features), [TypeScript](http://www.typescriptlang.org/)
