@@ -405,6 +405,12 @@ TDD, E2E testing, Integration testing, Functional testing, UI testing, Acceptanc
 
 ### Good breeding
 
+#### Pre-development process
+
+- [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) check
+
+#### UI
+
 При разработке UI делается акцент на качество UX.
 Вот некоторые примеры хорошего UX:
 
