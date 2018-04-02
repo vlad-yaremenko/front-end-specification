@@ -232,54 +232,28 @@ in your to-do comments, which can be tracked easily.
 > Please make short pull requests. Save your code reviwer
 
 #### Main branches
-Во время инициализации проекта создается две основные ветки. С бесконечным жизненным циклом.
 
-- master - содержит версию с текущим релизом
-- develop - содержит версию со следующим релизом. "Nightly builds"
+Во время инициализации проекта создается основная ветка. С бесконечным жизненным циклом.
+
+**master** - содержит версию с текущим релизом.
+
+Ветка **master** может изменяться только по средствам merge request.
 
 #### Feature branch
 
-Для каждого таска или баг фикса создается **feature** ветка от **develop** ветки.
+Для каждого таска или баг фикса создается **feature** ветка от **master** ветки.
 
 ```
-$ git checkout -b myfeature develop
+$ git checkout -b myfeature master
 ```
 
-**Feature** ветка должна сливаться с **develop** веткой
+**Feature** ветка должна сливаться с **master** веткой через merge request.
 
-Ветку можно назвать любым именем, кроме master, develop, release-*, hotfix-*
+**Feature** ветку можно назвать любым именем, кроме `bugfix-*`, `master`.
 
-#### Production release
+**Bugfix** ветку нужно назвать `bugfix-[name]`.
 
-Когда настает время продакшн релиза нужно решить, какой функционал войдет в релиз и что нужно подправить перед релизом. Для этого создается **release** ветка от **develop** ветки.
-
-```
-$ git checkout -b release-1.2 develop
-```
-
-**Release** ветка должна быть слита с **master** и **develop** ветками.
-
-При слиянии **release** ветки в **master** создается **tag** с номером версии.
-
-Конвенция именования ветки для релиза `release-[version number]`
-
-#### Hotfix
-
-Ветка **hotfix** создается при необходимости быстро поправить что-то в продакшене.
-
-**Hotfix** создается от **master** с указанием версии сборки.
-
-```
-$ git checkout -b hotfix-1.2.1 master
-```
-
-**Hotfix** ветка должна быть слита с **master** и **develop** ветками.
-
-При слиянии **hotfix** ветки в **master** создается **tag** с номером версии сборки.
-
-Конвенция именования ветки `hotfix-n.n.[build version number]`
-
-[Read me](http://nvie.com/posts/a-successful-git-branching-model)
+[Read me](https://guides.github.com/introduction/flow/)
 
 ### Code review
 
