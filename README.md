@@ -153,6 +153,14 @@ package.json находится в корневой директории и яв
   },
   "devDependencies": {
     "name": "version"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 versions"
+    ],
+    "production": [
+      "last 2 versions"
+    ]
   }
 }
 ```
@@ -197,6 +205,22 @@ stylelint ./path/to/styles/*.scss --syntax scss
 Код должен соответствовать требованием [Airbnb](https://github.com/airbnb/javascript).
 
 В каждый проект, для избежания элементарных ошибок, подключается [конфигурационный](/dotfiles/.eslintrc) файл [ESLint](https://eslint.org/).
+
+В ESLint конфиг подключаеются дополнительные модули:
+
+- [eslint-config-airbnb](https://github.com/airbnb/javascript) - правила eslint по стандарту airbnb
+- [babel-eslint](https://github.com/babel/babel-eslint) - babel парсер для eslint
+- [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat) - проверяет поддержку браузером
+
+Для запуска ESLint необходимо установить зависимости
+
+```bash
+# Install dependencies
+npm i -D eslint eslint-config-airbnb babel-eslint eslint-plugin-compat
+
+# Run linting
+eslint ./path/to/scripts/*.js
+```
 
 ## Development process
 
