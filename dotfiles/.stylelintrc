@@ -2,17 +2,12 @@
   "extends": ["stylelint-config-standard"],
   "plugins": [
     "stylelint-no-unsupported-browser-features",
-		"stylelint-scss"
+    "stylelint-scss"
   ],
   "rules": {
-    "plugin/no-unsupported-browser-features": [
-      true,
-      {
-        "browsers": ["> 2%", "Last 2 versions", "ie >= 10", "not ie_mob < 11", "not op_mini all"],
-        "severity": "warning"
-      }
-    ],
-
+    "plugin/no-unsupported-browser-features": [true, {
+      "severity": "warning"
+    }],
     "color-no-invalid-hex": true,
     "font-family-no-duplicate-names": true,
     "font-family-no-missing-generic-family-keyword": true,
@@ -59,7 +54,7 @@
     "declaration-property-value-blacklist": null,
     "declaration-block-single-line-max-declarations": 1,
     "selector-attribute-operator-blacklist": null,
-		"selector-class-pattern": "^(?:(?:o|c|u|t|s|is|has|_|js|qa)-)?[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*(?:__[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*)?(?:--[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*)?(?:\\[.+\\])?$",
+    "selector-class-pattern": "^(?:(?:o|c|u|t|s|is|has|_|js|qa)-)?[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*(?:__[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*)?(?:--[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*)?(?:\\[.+\\])?$",
     "selector-combinator-blacklist": null,
     "selector-id-pattern": null,
     "selector-max-empty-lines": 0,
@@ -126,7 +121,7 @@
       ]
     ],
     "block-closing-brace-space-after": "always-single-line",
-		"block-closing-brace-space-before": "always-single-line",
+    "block-closing-brace-space-before": "always-single-line",
     "block-opening-brace-space-after": "always-single-line",
     "block-opening-brace-space-before": "always",
     "block-opening-brace-newline-after": "always-multi-line",

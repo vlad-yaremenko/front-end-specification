@@ -154,14 +154,14 @@ package.json находится в корневой директории и яв
   "devDependencies": {
     "name": "version"
   },
-  "browserslist": {
-    "development": [
-      "last 2 versions"
-    ],
-    "production": [
-      "last 2 versions"
-    ]
-  }
+  "browserslist": [
+    "> 5%",
+    "Last 2 versions",
+    "ie >= 11",
+    "not dead",
+    "not ie_mob <= 11",
+    "not op_mini all"
+  ]
 }
 ```
 
