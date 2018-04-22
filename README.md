@@ -188,7 +188,7 @@ package.json находится в корневой директории и яв
 
 ```bash
 # Install dependencies
-npm i -D stylelint stylelint-config-standard stylelint-no-unsupported-browser-features stylelint-scss
+npm i -D stylelint stylelint-config-standard stylelint-no-unsupported-browser-features stylelint-scss stylelint-z-index-value-constraint stylelint-declaration-strict-value
 
 # Run linting
 stylelint ./path/to/styles/*.scss --syntax scss
