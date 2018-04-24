@@ -414,6 +414,6 @@ TODO: Discribe modules principle
 
 Suggestions/improvements [welcome](https://github.com/vlad-yaremenko/front-end-specification/issues)!
 
-№№ Task list
+## Task list
 
 Task list for implementation [here](https://trello.com/b/cxAOrkGn)

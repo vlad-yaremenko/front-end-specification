@@ -84,7 +84,7 @@
     "selector-max-empty-lines": 0,
     "selector-max-id": 1,
     "selector-max-universal": 2,
-    "selector-nested-pattern": "^&:(?:hover|focus)$",
+    "selector-nested-pattern": "^&:(?:hover|focus)|^&_{1,2}([a-zA-Z0-9]*-*)+$",
     "selector-no-qualifying-type": [
       true,
       {
