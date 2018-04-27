@@ -3,7 +3,7 @@
     "browser": true,
     "es6": true
   },
-  "extends": "airbnb/legacy",
+  "extends": "airbnb-base/legacy",
   "parser": "babel-eslint",
   "plugins": ["compat"],
   "rules": {
@@ -11,6 +11,13 @@
 
     "no-plusplus": "off",
     "no-param-reassign": "off",
-    "no-use-before-define": ["error", { "functions": false, "classes": false }]
+    "no-use-before-define": ["error", {
+      "functions": false,
+      "classes": false
+    }],
+    "class-methods-use-this": "warn",
+    "no-mixed-operators": ["error", {
+      "allowSamePrecedence": true
+    }]
   }
 }

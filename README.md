@@ -118,7 +118,19 @@
 
 ![Chrome](https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome\_48x48.png) | ![Firefox](https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox\_48x48.png) | ![IE](https://raw.githubusercontent.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png) |![Edge](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge\_48x48.png) | ![Opera](https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera\_48x48.png) | ![Safari](https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png)
 ---      | ---      | ---   | ---      | ---      | ---      |
-Latest ✔ | Latest ✔ | 11+ ✔ | Latest ✔ | Latest ✔ | Latest ✔ |
+Latest 2 ✔ | Latest 2 ✔ | 11+ ✔ | Latest 2 ✔ | Latest 2 ✔ | Latest 2 ✔ |
+
+### [Brawser list](https://github.com/browserslist/browserslist) configuration
+
+```json
+"browserslist": [
+  "> 5%",
+  "Last 2 versions",
+  "ie >= 11",
+  "not ie_mob <= 11",
+  "not op_mini all"
+]
+```
 
 ## Base setup
 
@@ -158,7 +170,6 @@ package.json находится в корневой директории и яв
     "> 5%",
     "Last 2 versions",
     "ie >= 11",
-    "not dead",
     "not ie_mob <= 11",
     "not op_mini all"
   ]
@@ -208,7 +219,7 @@ stylelint ./path/to/styles/*.scss --syntax scss
 
 В ESLint конфиг подключаеются дополнительные модули:
 
-- [eslint-config-airbnb](https://github.com/airbnb/javascript) - правила eslint по стандарту airbnb
+- [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base) - правила eslint по стандарту airbnb
 - [babel-eslint](https://github.com/babel/babel-eslint) - babel парсер для eslint
 - [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat) - проверяет поддержку браузером
 
@@ -216,10 +227,10 @@ stylelint ./path/to/styles/*.scss --syntax scss
 
 ```bash
 # Install dependencies
-npm i -D eslint eslint-config-airbnb babel-eslint eslint-plugin-compat
+npm i -D eslint eslint-config-airbnb-base babel-eslint eslint-plugin-compat
 
 # Run linting
-eslint ./path/to/scripts/*.js
+./node_modules/.bin/eslint ./path/to/scripts/*.js
 ```
 
 ## Development process
