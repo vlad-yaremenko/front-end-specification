@@ -211,7 +211,7 @@ stylelint ./path/to/styles/*.scss --syntax scss
 
 ## JavaScript
 
-### ES6+
+### ES6+ (base rules)
 
 Код должен соответствовать требованием [Airbnb](https://github.com/airbnb/javascript).
 
@@ -233,6 +233,20 @@ npm i -D eslint eslint-config-airbnb-base babel-eslint eslint-plugin-compat
 ./node_modules/.bin/eslint ./path/to/scripts/*.js
 ```
 
+### React
+
+React приложения соответствуют всем правилам [ES6+](#es6-base-rules) приложений. Также необходим установить
+зависимости для линтинга React приложений:
+
+- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - Плагин с правилами
+  ESLint для приложений на React
+
+```bash
+npm i -D eslint-plugin-react
+```
+
+В проекте используется [файл](/dotfiles/react/.eslintrc) конфигураций ESLint для React приложений.
+
 ## Development process
 
 ### Code linting
@@ -242,6 +256,7 @@ npm i -D eslint eslint-config-airbnb-base babel-eslint eslint-plugin-compat
 #### *Lint files list
 
 - [ESLint](/dotfiles/.eslintrc)
+- [React ESLint](/dotfiles/react/.eslintrc)
 - [StyleLint](/dotfiles/.stylelintrc)
 - TSLint
 
