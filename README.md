@@ -97,7 +97,7 @@
 
 ## README
 
-Все проекты сопровождаются [README.md](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) файлом в котором описаны:
+Все проекты сопровождаются [README.md файлом](/files/README.md) в котором описаны:
 
 - Название проекта
 - Короткое описание
@@ -111,6 +111,8 @@
   - Запуска тестов
 - Указаны основные технологии
 - Указаны поддержка браузеров
+
+Пример README.md файла смотри [тут](/files/README.md)
 
 ## Browsers support
 
