@@ -1,0 +1,28 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["airbnb-base/legacy", "plugin:react/recommended"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["compat", "react"],
+  "rules": {
+    "compat/compat": "warn",
+
+    "no-plusplus": "off",
+    "no-param-reassign": "off",
+    "no-use-before-define": ["error", {
+      "functions": false,
+      "classes": false
+    }],
+    "class-methods-use-this": "warn",
+    "no-mixed-operators": ["error", {
+      "allowSamePrecedence": true
+    }]
+  }
+}
