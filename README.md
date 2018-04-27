@@ -103,7 +103,6 @@
 - Короткое описание
 - Homepage
 - Ссылку на систему баг трекинга
-- Ссылку на репозиторий
 - Инструкция по установке зависимостей и настройке окружения
 - Команды для:
   - Старта разработки. Запуск watch-еров
@@ -118,7 +117,7 @@
 
 ![Chrome](https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome\_48x48.png) | ![Firefox](https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox\_48x48.png) | ![IE](https://raw.githubusercontent.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png) |![Edge](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge\_48x48.png) | ![Opera](https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera\_48x48.png) | ![Safari](https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png)
 ---      | ---      | ---   | ---      | ---      | ---      |
-Latest 2 ✔ | Latest 2 ✔ | 11+ ✔ | Latest 2 ✔ | Latest 2 ✔ | Latest 2 ✔ |
+Last 2 ✔ | Last 2 ✔ | 11+ ✔ | Last 2 ✔ | Last 2 ✔ | Last 2 ✔ |
 
 ### [Brawser list](https://github.com/browserslist/browserslist) configuration
 
@@ -211,7 +210,7 @@ stylelint ./path/to/styles/*.scss --syntax scss
 
 ## JavaScript
 
-### ES6+
+### ES6+ (base rules)
 
 Код должен соответствовать требованием [Airbnb](https://github.com/airbnb/javascript).
 
@@ -233,6 +232,20 @@ npm i -D eslint eslint-config-airbnb-base babel-eslint eslint-plugin-compat
 ./node_modules/.bin/eslint ./path/to/scripts/*.js
 ```
 
+### React
+
+React приложения соответствуют всем правилам [ES6+](#es6-base-rules) приложений. Также необходим установить
+зависимости для линтинга React приложений:
+
+- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - Плагин с правилами
+  ESLint для приложений на React
+
+```bash
+npm i -D eslint-plugin-react
+```
+
+В проекте используется [файл](/dotfiles/react/.eslintrc) конфигураций ESLint для React приложений.
+
 ## Development process
 
 ### Code linting
@@ -242,6 +255,7 @@ npm i -D eslint eslint-config-airbnb-base babel-eslint eslint-plugin-compat
 #### *Lint files list
 
 - [ESLint](/dotfiles/.eslintrc)
+- [React ESLint](/dotfiles/react/.eslintrc)
 - [StyleLint](/dotfiles/.stylelintrc)
 - TSLint
 
