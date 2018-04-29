@@ -41,7 +41,7 @@
 
 > Все, ... автоматизировать, ... автоматизировать.
 
-Тестирование, развертывание проекта, [настройка ОС](https://github.com/vlad-yaremenko/dotfiles), приготовление кофе,
+Тестирование, развертывание проекта, [настройка ОС](https://github.com/vlad-yaremenko/files), приготовление кофе,
 должно быть максимально быстрым и требовать минимальных телодвижений со стороны разработчика.
 
 ### Front-endman required knowledge
@@ -97,7 +97,7 @@
 
 ## README
 
-Все проекты сопровождаются [README.md](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) файлом в котором описаны:
+Все проекты сопровождаются [README.md](/files/README.md) файлом в котором описаны:
 
 - Название проекта
 - Короткое описание
@@ -135,11 +135,11 @@ Last 2 ✔ | Last 2 ✔ | 11+ ✔ | Last 2 ✔ | Last 2 ✔ | Last 2 ✔ |
 
 ### .files
 
-- [.gitignore](dotfiles/.gitignore)
+- [.gitignore](files/.gitignore)
 - [.*lint](#code-linting)
 - .env - Описывает переменные окружения для node.js проектов
 - .babelrc
-- [.editorconfig](dotfiles/.editorconfig) - Синхронизирует настройки редакторов. Hужно установить [плагин](http://editorconfig.org/#download) для своего редактора, если его нет.
+- [.editorconfig](files/.editorconfig) - Синхронизирует настройки редакторов. Hужно установить [плагин](http://editorconfig.org/#download) для своего редактора, если его нет.
 
 ### Package.json
 
@@ -185,7 +185,7 @@ package.json находится в корневой директории и яв
 
 Для написания стилей используется [шаблонизатор SCSS](https://sass-lang.com/)
 
-Для поддержания code style подключается [файл](/dotfiles/.stylelintrc) конфигураций [StyleLint](https://stylelint.io/)
+Для поддержания code style подключается [файл](/files/.stylelintrc) конфигураций [StyleLint](https://stylelint.io/)
 
 Настройки StyleLint формируются из [правил StyleLint](https://stylelint.io/user-guide/rules/)
 и дополнительных плагинов:
@@ -214,7 +214,7 @@ stylelint ./path/to/styles/*.scss --syntax scss
 
 Код должен соответствовать требованием [Airbnb](https://github.com/airbnb/javascript).
 
-В каждый проект, для избежания элементарных ошибок, подключается [конфигурационный](/dotfiles/.eslintrc) файл [ESLint](https://eslint.org/).
+В каждый проект, для избежания элементарных ошибок, подключается [конфигурационный](/files/.eslintrc) файл [ESLint](https://eslint.org/).
 
 В ESLint конфиг подключаеются дополнительные модули:
 
@@ -244,7 +244,7 @@ React приложения соответствуют всем правилам 
 npm i -D eslint-plugin-react
 ```
 
-В проекте используется [файл](/dotfiles/react/.eslintrc) конфигураций ESLint для React приложений.
+В проекте используется [файл](/files/react/.eslintrc) конфигураций ESLint для React приложений.
 
 ## Development process
 
@@ -254,9 +254,9 @@ npm i -D eslint-plugin-react
 
 #### *Lint files list
 
-- [ESLint](/dotfiles/.eslintrc)
-- [React ESLint](/dotfiles/react/.eslintrc)
-- [StyleLint](/dotfiles/.stylelintrc)
+- [ESLint](/files/.eslintrc)
+- [React ESLint](/files/react/.eslintrc)
+- [StyleLint](/files/.stylelintrc)
 - TSLint
 
 ### TODO
