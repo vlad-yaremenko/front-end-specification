@@ -232,6 +232,8 @@
     "scale-unlimited/declaration-strict-value": [
       [
         "/color/",
+        "fill",
+        "stroke",
         "z-index",
         "font-family"
       ],
