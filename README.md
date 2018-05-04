@@ -191,8 +191,10 @@ package.json находится в корневой директории и яв
 и дополнительных плагинов:
 
 - [stylelint config standard](https://github.com/stylelint/stylelint-config-standard) - основа для правил StyleLint
-- [stylelint-scss](https://github.com/kristerkari/stylelint-scss#list-of-rules)
-- [stylelint-no-unsupported-browser-features](https://www.npmjs.com/package/stylelint-no-unsupported-browser-features) - проверяет поддержку браузером написанных правил
+- [stylelint-scss](https://github.com/kristerkari/stylelint-scss#list-of-rules) - правила для линтинга .scss файлов
+- [stylelint-no-unsupported-browser-features](https://github.com/ismay/stylelint-no-unsupported-browser-features) - проверяет поддержку браузером написанных правил
+- [stylelint-z-index-value-constraint](https://github.com/kristerkari/stylelint-z-index-value-constraint) - позволяет установить максимальное и минимальное значение для z-index
+- [stylelint-declaration-strict-value](https://github.com/AndyOGo/stylelint-declaration-strict-value) - плагин, добавляющий правило согласно которому необходимо определённые свойства (цвета, шрифты, z-index) указывать только через переменные
 
 Для запуска StyleLint необходимо установить зависимости
 
