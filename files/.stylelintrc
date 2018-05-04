@@ -232,11 +232,13 @@
     "scale-unlimited/declaration-strict-value": [
       [
         "/color/",
+        "fill",
+        "stroke",
         "z-index",
         "font-family"
       ],
       {
-        "ignoreKeywords": ["currentColor", "transparent"]
+        "ignoreKeywords": ["currentColor", "transparent", "inherit"]
       }
     ],
     "plugin/z-index-value-constraint": {
