@@ -248,6 +248,10 @@ npm i -D eslint-plugin-react
 
 В проекте используется [файл](/files/react/.eslintrc) конфигураций ESLint для React приложений.
 
+### Additional code style conventions
+
+Также желательно использовать дополнительные соглашения по стилю кода, принятые внутри компании. Смотри [здесь](/files/code-style-addons/README.md)
+
 ## Development process
 
 ### Code linting
@@ -366,7 +370,7 @@ Code review - high priority task.
 
 #### Author, please
 
-> Don't meke me think
+> Don't make me think
 
 Одна цель - один коммит
 
@@ -433,9 +437,13 @@ TODO: Describe testing process
 
 У нас [тут больше](http://bfy.tw/Gt9G)
 
+#### Forms handling
+
+Смотри [здесь](/files/forms/README.md)
+
 ### Modules
 
-TODO: Discribe modules principle
+TODO: Describe modules principle
 
 ## Issues
 
