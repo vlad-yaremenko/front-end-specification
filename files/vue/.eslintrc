@@ -1,31 +1,25 @@
 {
-  "env": {
-    "browser": true,
-    "es6": true
-  },
+  "root": true,
   "extends": [
-    "airbnb-base/legacy",
     "plugin:vue/essential",
     "@vue/standard"
   ],
-  "parser": "babel-eslint",
-  "plugins": ["compat"],
   "rules": {
-    "compat/compat": "warn",
-
     "semi": [
       "error",
       "always"
     ],
+    "indent": "off",
+    "vue/script-indent": ["error", 2, {
+      "baseIndent": 1
+    }],
     "no-plusplus": "off",
     "no-param-reassign": "off",
     "no-use-before-define": ["error", {
       "functions": false,
       "classes": false
     }],
-    "class-methods-use-this": "warn",
-    "no-mixed-operators": ["error", {
-      "allowSamePrecedence": true
-    }]
+    "standard/no-callback-literal": "off",
+    "no-mixed-operators": "off"
   }
 }
