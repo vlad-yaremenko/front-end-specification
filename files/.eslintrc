@@ -10,6 +10,10 @@
     "compat/compat": "warn",
 
     "no-plusplus": "off",
+    "semi": [
+      "error",
+      "always"
+    ],
     "no-param-reassign": "off",
     "no-use-before-define": ["error", {
       "functions": false,

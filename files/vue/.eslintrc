@@ -3,14 +3,13 @@
     "browser": true,
     "es6": true
   },
-  "extends": ["airbnb-base/legacy", "plugin:react/recommended"],
+  "extends": [
+    "airbnb-base/legacy",
+    "plugin:vue/essential",
+    "@vue/standard"
+  ],
   "parser": "babel-eslint",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  },
-  "plugins": ["compat", "react"],
+  "plugins": ["compat"],
   "rules": {
     "compat/compat": "warn",
 
