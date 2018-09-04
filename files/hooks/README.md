@@ -1,34 +1,10 @@
 # Hooks
 
-## Установка
+## Дополнительные примеры использования
 
-В простой установке git-hooks нам поможет [husky](https://github.com/typicode/husky), по ссылке есть более подробное описание, как можно использовать.
-> npm install husky --save-dev
+Если вы еще больше хотите автоматизировать свой проект, то для вас есть еще пару интересных примеров использования:
 
-## Примеры использования
-
-1. Для примера, добавляем в хуки проверку линтеров на commit - [eslint](/files/.eslintrc) и [stylelint](/files/stylelintrc) (это базовые линтеры, которые подходят для большинства проектов, дополнительно можно подключать и другие, [tslint](https://palantir.github.io/tslint/usage/configuration/) например). А также запуск ваших unit-test-ов на push
-
-```json
-{
-  ...
-  "scripts": {
-    ...
-    "eslint": "./node_modules/.bin/eslint ./path/to/scripts/*.js",
-    "stylelint": "stylelint ./path/to/styles/*.scss --syntax scss",
-    "lint": "npm run eslint && npm run stylelint",
-    "test" "jest"
-  },
-  "husky":{
-    "hooks": {
-      "pre-commit": "npm run lint",
-      "pre-push": "npm run lint && npm run test"
-    }
-  } 
-  ...
-}
-```
-2. Если вы хотите, что бы перед коммитом ваш код не только проверялся, но и  не забывал форматироваться по заранее заданным правилам - это не сложно реализовать, как пример [.prettier](https://prettier.io/). Предварительно устанавливаем
+1. Если вы хотите, что бы перед коммитом ваш код не только проверялся, но и не забывал форматироваться по заранее заданным правилам - это не сложно реализовать, как пример [.prettier](https://prettier.io/). Предварительно устанавливаем
 
 > npm install --save-dev prettier lint-staged
 
@@ -36,21 +12,53 @@
 
 ```json
 {
-...
+  "name": "project-name",
+  "version": "0.0.1",
   "scripts": {
-    ...
-    "stylelint": "stylelint ./path/to/styles/*.scss --syntax scss",
-    "test" "jest"
+    "start": "Start development process",
+    "publish": "Create build for production",
+    "test": "jest"
   },
   "lint-staged": {
-    "*.{js,json,md}": ["prettier --write", "git add"]
+    "*.js": ["./node_modules/.bin/eslint --fix", "prettier --write", "git add"],
+    "*.scss": ["stylelint --fix", "prettier --write", "git add"],
+    "*.{json,md}": ["prettier --write", "git add"]
   },
   "husky":{
     "hooks": {
-      "pre-commit": "lint-staged && npm run stylelint",
-      "pre-push": "npm run test"
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
     }
-  } 
-  ...
+  }
 }
 ```
+2. Если по какой-то причине вам необходимо проигнорировать  механизм хуков, вы можете добавить флаг no-verify перед своим коммитом:
+
+> git commit -m "bypass git hooks" --no-verify
+
+3. Так же, если ваш проект основан на определенном фреймворки, настроить хуки не составит труда. Для примера, расмотрим проект основанный на Angular CLI:
+
+```json
+{
+  "name": "project-name",
+  "version": "0.0.1",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "lint-staged": {
+    "*.ts": ["ng lint --fix", "git add"]
+  },
+  "husky":{
+    "hooks": {
+      "pre-commit": "lint-staged && ng lint",
+      "pre-push": "ng test && ng e2e"
+    }
+  }
+}
+```
+

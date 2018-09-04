@@ -266,8 +266,35 @@ npm i -D eslint-plugin-react
 - TSLint
 
 ### [Git-hooks](/files/hooks/README.md)
-Правильно подключенные git-hooks сделают невозможным  коммиты/выливку проекта  без прохождения предварительно установленных вами тестов.
 
+Правильно подключенные git-hooks сделают невозможным  коммиты/выливку проекта  без прохождения предварительно установленных вами тестов. В простой установке git-hooks нам поможет [husky](https://github.com/typicode/husky), по ссылке есть более подробное описание, как можно его использовать.
+
+> npm install husky --save-dev
+
+Дописываем необходимые команды в наш package.json
+
+```json
+{
+  "name": "project-name",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "Start development process",
+    "publish": "Create build for production",
+    "eslint": "./node_modules/.bin/eslint ./path/to/scripts/*.js",
+    "stylelint": "stylelint ./path/to/styles/*.scss --syntax scss",
+    "lint": "npm run eslint && npm run stylelint",
+    "test": "jest"
+  },
+  "husky":{
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint && npm test"
+    }
+  }
+}
+```
+
+Дополнительная информация по ссылке в заголовке
 ### TODO
 
 Все изменения, которые нужно внести в код или реализовать, должны быть описаны в TODO комментариях, в тех местах, где нужно реализовать функционал или внести изменения.
