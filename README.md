@@ -434,6 +434,8 @@ internet by providing keywords.
 
 Наличие или отсутствие тестов может зависеть от пожеланий заказчика.
 
+#### [Theoretical basis for testing](/files/tests/THEORETICAL_BASE.md)
+
 #### BrowserStack
 
 Для тестирования кроссбраузерности используется BrowserStack.
