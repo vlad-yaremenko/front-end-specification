@@ -47,11 +47,16 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "ng lint",
+    "lint": "ng lint && npm run lint:styles",
+    "lint:styles": "stylelint .src/app/*/**/*.scss -- syntax scss && stylelint ./src/styles.scss --syntax scss",
     "e2e": "ng e2e"
   },
   "lint-staged": {
-    "*.ts": ["ng lint --fix", "git add"]
+    "*.scss": [
+      "stylelint ./src/app/*/**/*.scss --fix && ./src/styles.scss --fix",
+      "git add"
+    ],
+    "src/**/*.ts": ["tslint --fix", "git add"]
   },
   "husky":{
     "hooks": {
